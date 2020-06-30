@@ -1,0 +1,32 @@
+body {
+  /* body more useful than wild card "*" */
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border-box makes height and width include padding and border, can never include margin */
+}
+
+h1 {
+  text-shadow: black 15px 10px 10px;
+  /* first number: direction, (-) left (+) right. second number: direction, (-) up (+) down. third number: amount of precise shading, larger number = less accurate shadow */
+}
+
+span p {
+  text-decoration: underline;
+}
+
+div {
+  margin: 5%;
+  border: 5px black solid;
+}
+
+/* can style all elements with an attribute; ex: <button disabled> Click </button> by using [disabled] syntax*/
+
+/* ID's dont just allow you to style, they also allow you to add # to your url to scroll down to the element with that ID tag; ex: <a href="#section"> scrolls until element with section id is at the bottom of the screen */
+
+/* combining selectors: i.e. #product-overview h1 , meaning any h1 in the #product-overview, doesnt have to be a direct child */
+
+/* Different combinators: adjacent sibling ( h2 + p {}, applies to p directly following h2; have to have same parent ), general sibling ( h2 ~ p {}, all p tags colored doesnt have to be directly under just with the same parent ), child (div > p {}, can only be direct child of the div, will not work if p is nested in something else within the div  ), and descendant ( div p {}, level doesnt matter, all p somewhere/anywhere in the div get colored ) BE WARY OF PERFORMANCE IN PRODUCTION */
