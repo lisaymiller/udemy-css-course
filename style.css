@@ -23,6 +23,14 @@ div {
   border: 5px black solid;
 }
 
+/* more on combinators: can using something like a.active for <a class="active"></a> */
+
+/* pseudo class defines a style of a special STATE of an element, characterized by a single colon : */
+
+/* pseudo element defines the style of a specific PART of an element characterized by a double colon : : */
+
+/* display: none takes element out of dom completely, visibility: hidden hides elements but maintains its space in the dom */
+
 /* can style all elements with an attribute; ex: <button disabled> Click </button> by using [disabled] syntax*/
 
 /* ID's dont just allow you to style, they also allow you to add # to your url to scroll down to the element with that ID tag; ex: <a href="#section"> scrolls until element with section id is at the bottom of the screen */
