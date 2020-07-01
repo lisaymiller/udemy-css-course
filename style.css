@@ -3,6 +3,10 @@ body {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
 
+  /* multiple background "images"--> background: linear-gradient(), url("") .. */
+
+  /* background: url() left 10% bottom 20%/cover no repeat; */
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,6 +26,10 @@ div {
   margin: 5%;
   border: 5px black solid;
 }
+
+/* sticky acts like fixed until you reach the elements parent border? */
+
+/* spans are inline elements, divs are block-level elements */
 
 /* more on combinators: can using something like a.active for <a class="active"></a> */
 
