@@ -14,18 +14,25 @@ body {
 }
 
 h1 {
+  font-size: 3em;
   text-shadow: black 15px 10px 10px;
   /* first number: direction, (-) left (+) right. second number: direction, (-) up (+) down. third number: amount of precise shading, larger number = less accurate shadow */
-}
-
-span p {
-  text-decoration: underline;
 }
 
 div {
   margin: 5%;
   border: 5px black solid;
 }
+
+/* can margin: auto on container to center items easily, only works with block level elements */
+
+/* (so users can change their font sizes in their browser settings) for font size units:  rem, calculates on the initial size of the font size element, default 16px*/
+
+/* use max-width and min-width for responsiveness */
+
+/* applying sizing to font sizing so that a user can specifiy their personal font size preference and that still be applied on the website -- rem and em */
+
+/* vh - viewport height; vw - viewport width */
 
 /* sticky acts like fixed until you reach the elements parent border? */
 
