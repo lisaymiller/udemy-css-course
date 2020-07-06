@@ -21,8 +21,40 @@ h1 {
 
 div {
   margin: 5%;
+  padding: 1%;
   border: 5px black solid;
 }
+
+button {
+  background-color: black;
+  color: white;
+  transition: ease 0.5s;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+#modal {
+  display: none;
+}
+
+#close {
+  float: right;
+  margin-top: -60px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* media queries should be at the bottom of your CSS */
+
+/* should start creating your website MOBILE FIRST; use media queries for responsiveness */
+
+/* media quiries > vieport */
 
 /* can margin: auto on container to center items easily, only works with block level elements */
 
