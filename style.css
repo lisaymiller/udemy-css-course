@@ -55,6 +55,36 @@ a {
   color: black;
 }
 
+/* using &: must use before things like :hover when nesting or will not work; connects the parent its nested to instead of just nesting it within like header button */
+
+/* mixin param can be used to do something like change the direction of the flex whereever you use the mixin */
+
+/* @mixin MIXINNAME(OPTIONAL PARAM) {} */
+
+/* can use @extend to inherit properties */
+
+/* can nest media queries inside the element it applies to with sass */
+
+/* partials: _NAME.scss */
+
+/* sass can do simple arithmatic; like padding: $size-default * 2; */
+
+/* look at documentation for built in functions */
+
+/* sass map: ex --> $colors: (main: #VALUE, secondary: #VALUE); use variable like --> map-get($colors, main); */
+
+/* storing a list in a variable: store like normal, use syntax set up in the way you would if you were writing normal css */
+
+/* sass ---> no semicolons or curly braces; scss ---> keeps curly braces and semicolons, easier to understand; two different file extensions! */
+
+/* can nest selectors within each other in sass: header { button {} } instead of header button {}; can nest multiple things, keeps things DRY; will compile as normal for production, just helps during devlopment */
+
+/* sass can help you reuse code, like fragments in sprint boot */
+
+/* sass will automatically do prefixes for you! */
+
+/* sass can only be used in development; can use variables and mixins in sass, and it will compile into regular css for production */
+
 /* naming convention: kebab-case and BEM. name-like-this but use .BLOCK-ELEMENT-MODIFIER (.menu-item-big) */
 
 /* @supports () {} will let you run code if the browser supports that code (like using grid or flexbox), make sure to put fallback code BEFORE support */
