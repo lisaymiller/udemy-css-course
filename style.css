@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+/* using * is a way to normalize your CSS across browsers */
+
 body {
   /* body more useful than wild card "*" */
   font-family: "Courier New", Courier, monospace;
@@ -49,6 +54,56 @@ a {
   text-decoration: none;
   color: black;
 }
+
+/* naming convention: kebab-case and BEM. name-like-this but use .BLOCK-ELEMENT-MODIFIER (.menu-item-big) */
+
+/* @supports () {} will let you run code if the browser supports that code (like using grid or flexbox), make sure to put fallback code BEFORE support */
+
+/* use prefizes before regular css property for proper parsing */
+
+/* vendor prefixes: (for flex) -webkit-box, -ms-flexbox, -webkit-flex */
+
+/* css variables (~80% supported, call like: var(--VARIABLE_NAME) )--> :root { --VARIABLE_NAME: PROPERTY } */
+
+/* main axis: horizontal for row, vertical for column */
+
+/* align content aligns items along the cross axis */
+
+/* justify content shifts flex items along the main axis, horizontal for rows and vertical for columns */
+
+/* align items shifts flex items along the cross axis, vertical for rows and horizontal for columns */
+
+/* flex-flow shorthand */
+
+/* flex direction: row or column */
+
+/* can use flex wrap to adapt to width of container  */
+
+/* display: flex-inline --> width is not relative, using predefined width of child, height still only as tall as necessary  */
+
+/* display: flex --> items inline inside of a flex container, follows height of highest defined container, width relative when container shrunk */
+
+/* must use display: flex to use flexbox, element will be converted to a flex container, children will be flex items; FLEX CONTAINER can use flex-flow, justify-content, align-content, and align-items; FLEX ITEMS can use order, flex, and align self */
+
+/* can define what state your animation should be in with %'s: 0% {} 50% {} 100{} */
+
+/* use keyframe by using animation: KEYFRAME_NAME time(in s or ms delay duration iteration alternate/reverse/etc filledstate (forward skips last keyframe, ends in "normal" state) */
+
+/* keyframes: @keyframes KEYFRAME_NAME { from {CSS_PROPERTY} to {CSS_PROPERTY} } */
+
+/* use transform for animations/transitions --> transform: property you want to animate (can do all) and time (can do multiple, separated by commas), can add type like ease, ease-in, ease out, etc */
+
+/* use transform to rotate and position elements */
+
+/* font shorthand (must have at least size and family, make sure to double check order): font: style variant weight size family*/
+
+/* line height by default refers to the font size of the element you are referring to  */
+
+/* letter spacing and white space properties space out letters */
+
+/* font variant: small caps for all caps but same height */
+
+/* import google fonts and put them in the css instead of linking the google font in the head of the page */
 
 /* media queries should be at the bottom of your CSS */
 
